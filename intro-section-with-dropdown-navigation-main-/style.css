@@ -79,6 +79,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    background-color: white;
 }
 
 .box{
@@ -90,20 +91,23 @@ header{
     flex-direction: row;
 }
 .intro__section{
-
+   position: relative;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 0;
+    background-color: white;
 }.content__box{
     display: flex;
     flex-direction: column;
     height: 80vh;
     width: 50%;
     align-items: start;
+    background-color: white;
 }
 .logo__text{
-    padding-top: 1.5em;
+    padding-top: 1.7em;
     font-family: var(--FONT);
     font-size: 82px;
 }
@@ -131,3 +135,66 @@ margin-bottom: 6.2em;
     cursor: pointer;
   
 }
+.features{ 
+    position: absolute;
+    left: 110px;
+    padding: 1em;
+    padding-inline: 2em; /* 2em/12 */
+    display: flex;
+    flex-direction: column;
+    font-family: var(--FONT);
+    color: var(--MediumGray);
+    box-shadow: 0px 10px 10px rgb(214, 214, 214);
+    width: fit-content;
+    z-index: 80;
+    border-radius: 15px;
+}
+.features__el{
+    padding-block: 0.5em;
+    
+}
+.icon{
+    padding-right: 1em;
+}
+
+.company{
+    position: absolute;
+        left: 300px;
+        padding: 1em;
+        padding-inline: 2em;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--FONT);
+        color: var(--MediumGray);
+        box-shadow: 0px 10px 10px rgb(214, 214, 214);
+        width: fit-content;
+        z-index: 80;
+        border-radius: 15px;
+}
+.company__el {
+    padding-block: 0.5em;
+
+}
+.hidden {
+    display: none;
+}
+.img {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.block {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.turn{
+    transform: rotate(-180deg) ;
+    transition: all 0.5s;
+}
+
+
+
+@media (max-width: 540px){
+    
+}
+
+

@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>intro-section-with-dropdown-navigation-main</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/favicon-32x32.png">
 </head>
 <body>
     <header>
         <div class="name__dropdown">
             <h1 class="logo">snap</h1>
-            <span class="dropdown">Features <img src="images/icon-arrow-down.svg" alt="arrown--down"></span>
-            <span class="dropdown">Company <img src="images/icon-arrow-down.svg" alt="arrown--down"></span>
+            <span class="dropdown features__drop ">Features 
+                <img class="img" src="images/icon-arrow-down.svg" alt="arrown--down">
+            </span>
+            <span class="dropdown company__drop">Company 
+                <img class="block" src="images/icon-arrow-down.svg" alt="arrown--down">
+            </span>
             <span class="dropdown">Careers</span>
             <span class="dropdown">About</span>
         </div>
@@ -19,9 +25,22 @@
             <button class="btn login">Login</button>
             <button class="btn register">Register</button>
         </div>
+        
     </header>
+    
     <!-- Intro Section -->
     <div class="intro__section">
+        <div class="features hidden ">
+            <span class="features__el"><img class="icon" src="images/icon-todo.svg" alt="icon-todo">Todo list </span>
+            <span class="features__el"><img class="icon" src="images/icon-calendar.svg" alt="icon-calendar">Calendar</span>
+            <span class="features__el"><img class="icon" src="images/icon-reminders.svg" alt="icon-reminders">Reminders</span>
+            <span class="features__el"><img class="icon" src="images/icon-planning.svg" alt="icon-planning">Planning</span>
+        </div>
+        <div class="company hidden">
+            <span class="company__el">History</span>
+            <span class="company__el">Our team</span>
+            <span class="company__el">Blog</span>
+        </div>
         <div class="box">
             <div class="content__box">
                 <h2 class="logo__text">Make <br> <span>remote work</span></h2>
